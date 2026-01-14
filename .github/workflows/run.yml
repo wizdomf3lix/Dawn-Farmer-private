@@ -27,4 +27,4 @@ jobs:
       - name: Run Dawn-Farmer script
         run: |
           # Replace with the actual entry point of the repo
-          python main.py
+          python farm.py
