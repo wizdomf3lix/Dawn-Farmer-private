@@ -3,7 +3,7 @@ name: Run Dawn-Farmer Script Every 6 Hours
 on:
   schedule:
     # Runs every 6 hours
-    - cron: "0 */6 * * *"
+   
   workflow_dispatch: # allows manual trigger
 
 jobs:
