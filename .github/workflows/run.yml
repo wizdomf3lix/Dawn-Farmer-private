@@ -1,8 +1,7 @@
 name: Run Dawn-Farmer Script Every 6 Hours
 
 on:
-  schedule:
-    # Runs every 6 hours
+ # Runs every 6 hours
    
   workflow_dispatch: # allows manual trigger
 
