@@ -1,18 +1,13 @@
 name: Run Dawn-Farmer Script Every 6 Hours
 
 on:
-  schedule:
-    # Runs every 6 hours
-    - cron: "0 */6 * * *"
+ # Runs every 6 hours
+   
   workflow_dispatch: # allows manual trigger
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # 10 parallel instances
-      fail-fast: false
 
     steps:
       - name: Checkout repository
@@ -30,5 +25,5 @@ jobs:
 
       - name: Run Dawn-Farmer script
         run: |
-          echo "Running instance ${{ matrix.instance }}"
+          # Replace with the actual entry point of the repo
           python farm.py
